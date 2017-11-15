@@ -1,0 +1,116 @@
+<!doctype html>  <!--声明文档类型-->
+<html>
+     <head>
+	    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	    <title></title>
+		<meta name="Keywords" content="关键词，关键词">
+	    <meta name="description" content="描述">
+		<style type="text/css">
+		*{margin:0;padding:0;}
+		.wrap{
+				width:300px;
+				height:300px;
+				margin:200px auto;
+				padding:100px;
+				border:1px dashed #000;
+				perspective:800px;
+				
+		}
+		.wrap .box{
+				width:300px;
+				height:300px;
+				border:1px solid rgba(255,0,0,0.5);
+				box-shadow:0px 0px 20px rgba(255,0,0,0.5) inset;
+				position:relative;
+				transition:all 4s;
+				transform-style: preserve-3d;
+				transform-origin: center center -150px;
+		
+		}
+		
+		.wrap .box div{
+				width:300px;
+				height:300px;
+				box-shadow:0px 0px 20px rgba(255,0,0,0.5) inset;
+				
+		
+		}
+		.wrap .box div:nth-child(1){
+				position:absolute;
+				left:0px;
+				top:-300px;
+				transform-origin:bottom;
+				transform:rotateX(90deg);
+		
+		
+		}
+
+		.wrap .box div:nth-child(2){
+				position:absolute;
+				left:0px;
+				top:300px;
+				transform-origin:top;
+				transform:rotateX(-90deg);
+		
+		
+		}
+
+		.wrap .box div:nth-child(3){
+				position:absolute;
+				left:-300px;
+				top:0px;
+				transform-origin:right;
+				transform:rotateY(-90deg);
+		
+		
+		}
+		
+		.wrap .box div:nth-child(4){
+				position:absolute;
+				left:300px;
+				top:0px;
+				transform-origin:left;
+				transform:rotateY(90deg);
+		
+		
+		}
+		
+		.wrap .box div:nth-child(5){
+				position:absolute;
+				left:0px;
+				top:0px;
+				transform:translateZ(-300px);
+		
+		
+		}
+		.wrap:hover .box{
+				transform:rotateY(180deg);
+		
+		}
+
+		</style>
+	 </head>
+
+     <body>
+	    <div class="wrap">
+			<div class="box">
+				<div>上</div>
+				<div>下</div>
+				<div>左</div>
+				<div>右</div>
+				<div>后</div>
+			
+			
+			</div>
+		
+		</div>
+	 
+			 
+	 
+	 
+	 </body>
+
+
+
+
+</html>
